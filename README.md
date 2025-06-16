@@ -54,10 +54,6 @@ Aplicación Android para encontrar, agendar y gestionar citas médicas con profe
 
 > 💡 Requiere mínimo Android 8.0 (API 26)
 
-## 📄 Licencia
-
-Este proyecto está disponible bajo licencia MIT. Consulta el archivo `LICENSE` para más detalles.
-
 ## 📫 Contacto
 
 Desarrollado por **Adrián**  
