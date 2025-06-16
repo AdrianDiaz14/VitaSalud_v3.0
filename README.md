@@ -1,4 +1,4 @@
-https://i.imgur.com/LUkzG7B.png
+![VitaSalud](https://i.imgur.com/LUkzG7B.png)
 # VitaSalud
 
 Aplicación Android para encontrar, agendar y gestionar citas médicas con profesionales sanitarios. Con una interfaz intuitiva, búsqueda avanzada, favoritos, geolocalización y notificaciones, VitaSalud facilita el acceso a la atención médica desde tu móvil.
