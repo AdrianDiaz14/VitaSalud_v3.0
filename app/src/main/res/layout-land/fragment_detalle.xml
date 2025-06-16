@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <!-- Columna izquierda (información principal) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingEnd="16dp">
+
+                <!-- Botón de favoritos -->
+                <ImageButton
+                    android:id="@+id/button_favorite"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="end"
+                    android:background="@null"
+                    android:src="@drawable/ic_star_favorite_empty"
+                    android:contentDescription="@string/a_adir_a_favoritos"/>
+
+                <!-- Imagen del profesional -->
+                <ImageView
+                    android:id="@+id/profesional_image"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="@string/imagen_del_profesional"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_launcher_foreground"/>
+
+                <!-- Nombre del profesional -->
+                <TextView
+                    android:id="@+id/nombre_detalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/nombre_del_profesional"
+                    android:textColor="@color/colorText"
+                    android:textSize="22sp"
+                    android:textStyle="bold"/>
+
+                <!-- Especialidad -->
+                <TextView
+                    android:id="@+id/especialidad_detalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="20dp"
+                    android:text="@string/especialidad"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="18sp"/>
+
+                <!-- Dirección -->
+                <TextView
+                    android:id="@+id/direccion_detalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/direcci_n_calle_ejemplo_123"
+                    android:textColor="@color/colorTextSecondary"
+                    android:textSize="16sp"/>
+
+                <!-- Teléfono -->
+                <TextView
+                    android:id="@+id/telefono_detalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="phone"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/tel_fono_123456789"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="16sp"/>
+
+                <!-- Email -->
+                <TextView
+                    android:id="@+id/email_detalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="email"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/email_ejemplo_email_com"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="16sp"/>
+
+                <!-- Localidad -->
+                <TextView
+                    android:id="@+id/localidad_detalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/localidadEjem"
+                    android:textColor="@color/colorTextSecondary"
+                    android:textSize="16sp"/>
+
+                <!-- Precio -->
+                <TextView
+                    android:id="@+id/precio_detalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/precio_100"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="16sp"/>
+
+                <!-- Horario -->
+                <TextView
+                    android:id="@+id/horario_detalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/horario_9_00_18_00"
+                    android:textColor="@color/colorTextSecondary"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <!-- Columna derecha (mapa) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Mapa -->
+                <org.osmdroid.views.MapView
+                    android:id="@+id/mapView"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- Botón "Cómo llegar" -->
+                <Button
+                    android:id="@+id/button_como_llegar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="@string/c_mo_llegar"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Botón para seleccionar cita -->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_reservar_cita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/coger_cita"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@color/colorPrimary"
+        app:icon="@android:drawable/ic_menu_my_calendar"
+        app:iconPadding="4dp"
+        app:iconTint="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

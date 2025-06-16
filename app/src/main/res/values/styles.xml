@@ -1,0 +1,24 @@
+<resources>
+    <!-- Estilo para bordes redondeados en imágenes -->
+    <style name="ShapeAppearanceOverlay.Card.Rounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <!-- Estilo para botones primarios -->
+    <style name="ButtonPrimary" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="cornerRadius">16dp</item>
+    </style>
+
+    <!-- Estilo para botones secundarios -->
+    <style name="ButtonSecondary" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:backgroundTint">@color/colorPrimarySuperLight</item>
+        <item name="strokeColor">@color/colorPrimaryDark</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="cornerRadius">16dp</item>
+    </style>
+
+</resources>

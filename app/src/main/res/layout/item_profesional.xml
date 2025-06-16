@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="@color/colorSurface"
+    app:cardElevation="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Imagen del profesional -->
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!-- Nombre del profesional -->
+        <TextView
+            android:id="@+id/nombre_profesional"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/dr_maria_lopez"
+            android:textColor="@color/colorText"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/thumbnail"
+            app:layout_constraintTop_toTopOf="@id/thumbnail"
+            app:layout_constraintEnd_toStartOf="@id/texto_distancia" />
+
+        <!-- Especialidad -->
+        <TextView
+            android:id="@+id/especialidad_profesional"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/cardiologo"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="@id/nombre_profesional"
+            app:layout_constraintTop_toBottomOf="@id/nombre_profesional"
+            app:layout_constraintEnd_toEndOf="@id/nombre_profesional" />
+
+        <!-- Localidad -->
+        <TextView
+            android:id="@+id/localidad_profesional"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/valencia"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/nombre_profesional"
+            app:layout_constraintStart_toStartOf="@id/nombre_profesional"
+            app:layout_constraintTop_toBottomOf="@id/especialidad_profesional" />
+
+        <!-- Precio -->
+        <TextView
+            android:id="@+id/precio_profesional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/_60"
+            android:textColor="@color/colorGreenPrice"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/nombre_profesional"
+            app:layout_constraintTop_toBottomOf="@id/localidad_profesional" />
+
+        <!-- Distancia -->
+        <TextView
+            android:id="@+id/texto_distancia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="2dp"
+            android:text="@string/a_1_2_km"
+            android:textColor="@color/colorOrangeDistance"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/nombre_profesional"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Separador -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorPrimaryLight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/thumbnail"
+            app:layout_constraintTop_toBottomOf="@id/precio_profesional" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

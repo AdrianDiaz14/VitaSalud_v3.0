@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base tema claro -->
+    <style name="Base.Theme.VitaSaludApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Colores primarios -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryContainer">@color/colorPrimaryLight</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+
+        <!-- Colores secundarios -->
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryContainer">@color/colorPrimaryDark</item>
+        <item name="colorOnSecondary">@color/colorOnPrimary</item>
+
+        <!-- Fondo y superficie - CORRECCIÓN AQUÍ -->
+        <item name="android:colorBackground">@color/colorBackground</item> <!-- Referencia directa al color -->
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnSurface">@color/colorText</item>
+        <item name="colorOnSurfaceVariant">@color/colorTextSecondary</item>
+
+        <!-- Estados -->
+        <item name="colorPrimaryInverse">@color/blue_700</item>
+        <item name="colorSurfaceVariant">@color/blue_50</item>
+
+        <!-- Componentes específicos -->
+        <item name="android:statusBarColor">?attr/colorPrimaryContainer</item> <!-- Corregido -->
+        <item name="android:navigationBarColor">@color/colorBackground</item> <!-- Referencia directa -->
+    </style>
+
+    <style name="Theme.VitaSaludApp" parent="Base.Theme.VitaSaludApp" />
+</resources>

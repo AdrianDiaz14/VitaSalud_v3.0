@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título Terminos y condiciones -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/t_rminos_y_condiciones"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Bloque de texto scrolleado -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/textViewTerminos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/terminos_condiciones_texto"
+            android:textSize="14sp"/>
+    </ScrollView>
+
+    <!-- Botón de cierre de los términos -->
+    <Button
+        android:id="@+id/buttonAceptarTerminos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/he_le_do_los_t_rminos_y_condiciones"
+        android:backgroundTint="@color/colorPrimaryDark"/>
+</LinearLayout>

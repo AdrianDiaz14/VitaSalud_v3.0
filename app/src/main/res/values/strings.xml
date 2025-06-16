@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">VitaSaludApp</string>
+    <string name="ayuda">Ayuda</string>
+    <string name="salir">Salir</string>
+    <string name="navigation_drawer_open">Abrir navegación</string>
+    <string name="navigation_drawer_close">Cerrar navegación</string>
+    <string name="carrusel_imagen_desc">Imagen promocional de la aplicación</string>
+    <string name="terminos_condiciones_texto">
+    <b>Política de Privacidad - VitaSalud App</b>\n\n
+    <b>1. Recopilación de información</b>\n
+    Recopilamos información personal cuando te registras en nuestra aplicación, incluyendo tu nombre, dirección de correo electrónico, número de teléfono y otra información necesaria para proporcionar nuestros servicios de gestión de citas con profesionales sanitarios.\n\n
+    <b>2. Uso de la información</b>\n
+    La información recopilada se utiliza para:\n
+    - Proporcionar y mejorar nuestros servicios\n
+    - Personalizar tu experiencia\n
+    - Gestionar citas y recordatorios\n
+    - Comunicarnos contigo\n\n
+    <b>3. Protección de datos</b>\n
+    Implementamos medidas de seguridad para proteger tu información personal. Todos los datos médicos se tratan con especial confidencialidad según la normativa aplicable.\n\n
+    <b>4. Compartir información</b>\n
+    No compartimos tu información personal con terceros excepto cuando sea necesario para proporcionar los servicios (como profesionales sanitarios) o cuando lo exija la ley.\n\n
+    <b>5. Tus derechos</b>\n
+    Tienes derecho a acceder, rectificar o eliminar tus datos personales. Puedes ejercer estos derechos contactando con nosotros a través de la aplicación.\n\n
+    Al utilizar VitaSalud App, aceptas esta política de privacidad y el tratamiento de tus datos personales conforme a lo aquí establecido.
+</string>
+    <string name="reservar_cita">Reservar cita</string>
+    <string name="nombre">Nombre</string>
+    <string name="buscar">Buscar</string>
+    <string name="localidad">Localidad</string>
+    <string name="ordenar_por_nombre">Ordenar por nombre</string>
+    <string name="ordenar_por_precio">Ordenar por precio</string>
+    <string name="ordenar_por_distancia">Ordenar por distancia</string>
+    <string name="usuario_desconocido">Usuario desconocido</string>
+    <string name="inicio">Inicio</string>
+    <string name="usuario">Usuario</string>
+    <string name="buscador">Buscador</string>
+    <string name="citas">Citas</string>
+    <string name="mis_favoritos">Mis favoritos</string>
+    <string name="email">Email:</string>
+    <string name="user_example_com">user@example.com</string>
+    <string name="cambiar_contrase_a">Cambiar contraseña</string>
+    <string name="cerrar_sesi_n">Cerrar sesión</string>
+    <string name="si_eres_profesional_sanitario_y_quieres_inscribirte_como_profesional_pincha_aqu">Si eres profesional sanitario y quieres inscribirte como profesional pincha aquí:</string>
+    <string name="registrarse_como_profesional">Registrarse como profesional</string>
+    <string name="enviar_solicitud">Enviar solicitud</string>
+    <string name="nombre_del_profesional">Nombre del Profesional</string>
+    <string name="imagen_del_profesional">Imagen del profesional</string>
+    <string name="especialidad">Especialidad</string>
+    <string name="direcci_n_calle_ejemplo_123">Dirección: Calle Ejemplo 123</string>
+    <string name="tel_fono_123456789">Teléfono: 123456789</string>
+    <string name="email_ejemplo_email_com">Email: ejemplo@email.com</string>
+    <string name="localidadEjem">Localidad</string>
+    <string name="precio_100">Precio: 100€</string>
+    <string name="horario_9_00_18_00">Horario: 9:00 - 18:00</string>
+    <string name="c_mo_llegar">Cómo llegar</string>
+    <string name="coger_cita">Coger cita</string>
+    <string name="a_adir_a_favoritos">Añadir a favoritos</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="buscarbutton">Buscar</string>
+    <string name="anular_cita">Anular cita</string>
+    <string name="_10_30_11_15">10:30 - 11:15</string>
+    <string name="_12_de_mayo_de_2023">12 de mayo de 2023</string>
+    <string name="cardiolog_a">Cardiología</string>
+    <string name="dr_mar_a_l_pez">Dr. María López</string>
+    <string name="icono_item">Icono item</string>
+    <string name="eliminar_tem">Eliminar ítem</string>
+    <string name="precio">Precio</string>
+    <string name="t_tulo">Título</string>
+    <string name="imagenProfesional">Imagen del profesional</string>
+    <string name="dr_maria_lopez">Dr. Maria Lopez</string>
+    <string name="cardiologo">Cardiologo</string>
+    <string name="valencia">Valencia</string>
+    <string name="_60">60€</string>
+    <string name="a_1_2_km">a 1.2 km</string>
+    <string name="iniciar_sesi_n">Iniciar sesión</string>
+    <string name="correo_electr_nico">Correo Electrónico</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="olvidaste_tu_contrase_a">¿Olvidaste tu contraseña?</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="crear_nueva_cuenta">Crear nueva cuenta</string>
+    <string name="acepto_las">Acepto las</string>
+    <string name="pol_ticas_de_privacidad">políticas de privacidad</string>
+    <string name="crear_cuenta">Crear cuenta</string>
+    <string name="nombre_completo">Nombre completo</string>
+    <string name="direcci_n">Dirección</string>
+    <string name="tel_fono">Teléfono</string>
+    <string name="horario_de_consulta">Horario de consulta</string>
+    <string name="precio_de_la_consulta">Precio de la consulta</string>
+    <string name="t_rminos_y_condiciones">Términos y Condiciones</string>
+    <string name="he_le_do_los_t_rminos_y_condiciones">He leído los términos y condiciones</string>
+    <string name="logo_de_la_app">Logo de la App</string>
+    <string name="selector_de_pesta_as">Selector de pestañas</string>
+    <string name="la_mejor_atenci_n_en_un_solo_clic">La mejor atención en un solo clic</string>
+    <string name="encuentra_a_los_mejores_profesionales_cerca_de_ti">Encuentra a los mejores profesionales cerca de ti.</string>
+    <string name="imagen_1_del_slider">Imagen 1 del slider</string>
+    <string name="imagen_2_del_slider">Imagen 2 del slider</string>
+    <string name="imagen_3_del_slider">Imagen 3 del slider</string>
+    <string name="_10_30h">10:30h</string>
+    <string name="tus_profesionales_favoritos">Tus profesionales favoritos</string>
+    <string name="gestiona_tu_informaci_n">Gestiona tu información</string>
+    <string name="mi_perfil">Mi perfil</string>
+</resources>

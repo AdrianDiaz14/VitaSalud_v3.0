@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.vitasaludapp.HomeFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/oferta1Fragment"
+        android:name="com.example.vitasaludapp.Sliders.Slider1Fragment"
+        android:label="fragment_oferta1"
+        tools:layout="@layout/fragment_slider1"/>
+
+    <fragment
+        android:id="@+id/oferta2Fragment"
+        android:name="com.example.vitasaludapp.Sliders.Slider2Fragment"
+        android:label="fragment_oferta2"
+        tools:layout="@layout/fragment_slider2"/>
+
+    <fragment
+        android:id="@+id/oferta3Fragment"
+        android:name="com.example.vitasaludapp.Sliders.Slider3Fragment"
+        android:label="fragment_oferta3"
+        tools:layout="@layout/fragment_slider3"/>
+</navigation>

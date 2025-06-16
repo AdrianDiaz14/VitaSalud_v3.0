@@ -1,0 +1,12 @@
+<resources>
+    <style name="Base.Theme.VitaSaludApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimary</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnPrimary">@color/colorBackground</item>
+        <item name="colorOnSecondary">@color/colorText</item>
+        <item name="colorOnSurface">@color/colorTextSecondary</item>
+    </style>
+</resources>

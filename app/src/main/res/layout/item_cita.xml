@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="4dp"
+    android:backgroundTint="@color/colorPrimarySuperLight"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Icono del profesional -->
+        <ImageView
+            android:id="@+id/icon_profesional"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="@string/icono_item"
+            android:src="@drawable/person"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/colorPrimaryDark" />
+
+        <!-- Nombre del profesional -->
+        <TextView
+            android:id="@+id/text_nombre_profesional"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/dr_mar_a_l_pez"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/button_delete"
+            app:layout_constraintStart_toEndOf="@id/icon_profesional"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Especialidad del profesional -->
+        <TextView
+            android:id="@+id/text_especialidad_profesional"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/cardiolog_a"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/text_nombre_profesional"
+            app:layout_constraintStart_toEndOf="@id/icon_profesional"
+            app:layout_constraintTop_toBottomOf="@id/text_nombre_profesional" />
+
+        <!-- Separador -->
+        <View
+            android:id="@+id/linea_divisoria"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorBackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_especialidad_profesional" />
+
+        <!-- Fecha de la cita pendiente -->
+        <TextView
+            android:id="@+id/text_fecha_cita_pendiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/_12_de_mayo_de_2023"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linea_divisoria" />
+
+        <!-- Hora de la cita pendiente -->
+        <TextView
+            android:id="@+id/text_hora_cita_pendiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/_10_30h"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/text_fecha_cita_pendiente"
+            app:layout_constraintStart_toEndOf="@id/text_fecha_cita_pendiente" />
+
+        <!-- Botón de anular cita -->
+        <ImageButton
+            android:id="@+id/button_delete"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@color/colorPrimaryLight"
+            android:contentDescription="@string/anular_cita"
+            android:padding="8dp"
+            android:src="@android:drawable/ic_delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/colorRedIcon" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,36 @@
+<resources>
+    <!-- Paleta primaria azul -->
+    <color name="blue_50">#E6F0FF</color> <!-- Azul muy claro (fondo) -->
+    <color name="blue_100">#A6C8FF</color> <!-- Azul claro principal -->
+    <color name="blue_200">#7DAEFF</color> <!-- Azul medio -->
+    <color name="blue_500">#5B84D6</color> <!-- Azul principal -->
+    <color name="blue_700">#3A5FA3</color> <!-- Azul oscuro -->
+    <color name="blue_900">#1E3D72</color> <!-- Azul muy oscuro -->
+    <color name="red">#D91515</color>
+    <color name="green">#4CAF50</color>
+    <color name="orange">#FF9800</color>
+
+    <!-- Colores neutros -->
+    <color name="white">#FFFFFF</color>
+    <color name="gray_50">#F9FAFC</color> <!-- Fondo muy claro -->
+    <color name="gray_100">#F0F2F5</color>
+    <color name="gray_500">#6C6C6C</color> <!-- Texto secundario -->
+    <color name="gray_800">#222222</color> <!-- Texto principal -->
+    <color name="black">#000000</color>
+
+    <!-- Colores semánticos (para temas) -->
+    <color name="colorPrimary">@color/blue_500</color>
+    <color name="colorPrimaryLight">@color/blue_100</color>
+    <color name="colorPrimarySuperLight">@color/blue_50</color>
+    <color name="colorPrimaryDark">@color/blue_700</color>
+    <color name="colorSecondary">@color/blue_200</color>
+    <color name="colorSecondaryDark">@color/blue_900</color>
+    <color name="colorBackground">@color/white</color>
+    <color name="colorSurface">@color/gray_50</color>
+    <color name="colorText">@color/gray_800</color>
+    <color name="colorTextSecondary">@color/gray_500</color>
+    <color name="colorOnPrimary">@color/white</color>
+    <color name="colorRedIcon">@color/red</color>
+    <color name="colorGreenPrice">@color/green</color>
+    <color name="colorOrangeDistance">@color/orange</color>
+</resources>

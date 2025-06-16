@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "343848547450",
+    "firebase_url": "https://vitasalud-bc84e-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "vitasalud-bc84e",
+    "storage_bucket": "vitasalud-bc84e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343848547450:android:4fa417903c8f45b12b37c3",
+        "android_client_info": {
+          "package_name": "com.example.vitasaludapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzdVgTPqWVFWUxMu2dMHqhbAy4lCKzCrQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

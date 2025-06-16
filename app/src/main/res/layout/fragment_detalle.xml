@@ -1,0 +1,206 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+<ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Botón de favoritos -->
+        <ImageButton
+            android:id="@+id/button_favorite"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@null"
+            android:src="@drawable/ic_star_favorite_empty"
+            android:contentDescription="@string/a_adir_a_favoritos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Imagen del profesional -->
+        <ImageView
+            android:id="@+id/profesional_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/imagen_del_profesional"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button_favorite" />
+
+        <!-- Nombre del profesional -->
+        <TextView
+            android:id="@+id/nombre_detalle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre_del_profesional"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorText"
+            app:layout_constraintTop_toBottomOf="@id/profesional_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Localidad -->
+        <TextView
+            android:id="@+id/especialidad_detalle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:paddingBottom="20dp"
+            android:text="@string/especialidad"
+            android:textColor="@color/colorSecondary"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nombre_detalle" />
+
+        <!-- Dirección -->
+        <TextView
+            android:id="@+id/direccion_detalle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/direcci_n_calle_ejemplo_123"
+            android:textSize="16sp"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/especialidad_detalle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Teléfono -->
+        <TextView
+            android:id="@+id/telefono_detalle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tel_fono_123456789"
+            android:textSize="16sp"
+            android:textColor="@color/colorSecondary"
+            android:clickable="true"
+            android:focusable="true"
+            android:autoLink="phone"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/direccion_detalle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/email_detalle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/email_ejemplo_email_com"
+            android:textSize="16sp"
+            android:textColor="@color/colorSecondary"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/telefono_detalle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:autoLink="email"/>
+
+        <!-- Especialidad -->
+        <TextView
+            android:id="@+id/localidad_detalle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/localidadEjem"
+            android:textSize="16sp"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/email_detalle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Precio -->
+        <TextView
+            android:id="@+id/precio_detalle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/precio_100"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/localidad_detalle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Horario -->
+        <TextView
+            android:id="@+id/horario_detalle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/horario_9_00_18_00"
+            android:textSize="16sp"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/precio_detalle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Plano -->
+        <org.osmdroid.views.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/horario_detalle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Botón "Cómo llegar" -->
+        <Button
+            android:id="@+id/button_como_llegar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/c_mo_llegar"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorPrimary"
+            app:layout_constraintTop_toBottomOf="@id/mapView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+<!-- Botón para seleccionar cita -->
+<com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+    android:id="@+id/fab_reservar_cita"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:text="@string/coger_cita"
+    android:textColor="@android:color/white"
+    app:backgroundTint="@color/colorPrimary"
+    app:icon="@android:drawable/ic_menu_my_calendar"
+    app:iconPadding="4dp"
+    app:iconTint="@android:color/white"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="4dp"
+    android:backgroundTint="@color/colorPrimarySuperLight"
+    android:padding="8dp"
+    app:cardElevation="2dp">
+
+<ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/imagenProfesional"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/nombre_profesional"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/dr_mar_a_l_pez"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/thumbnail"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/image_delete"
+        app:layout_constraintWidth_default="spread"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/precio"
+        android:textColor="#173A0F"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintStart_toEndOf="@id/thumbnail"
+        app:layout_constraintTop_toBottomOf="@id/nombre_profesional"
+        app:layout_constraintEnd_toStartOf="@id/image_delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_default="spread"/>
+
+    <ImageView
+        android:id="@+id/image_delete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimaryLight"
+        android:contentDescription="@string/anular_cita"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/colorRedIcon" />
+</androidx.constraintlayout.widget.ConstraintLayout>
