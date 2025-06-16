@@ -41,9 +41,8 @@ Aplicación Android para encontrar, agendar y gestionar citas médicas con profe
 ## 🚀 Instalación local
 
 1. Clona este repositorio:
-   ```bash
    git clone https://github.com/tu_usuario/vitasalud.git
-  ```
+
 2. Abre con Android Studio.
 
 3. Asegúrate de tener:
