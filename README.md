@@ -1,3 +1,4 @@
+https://i.imgur.com/LUkzG7B.png
 # VitaSalud
 
 Aplicación Android para encontrar, agendar y gestionar citas médicas con profesionales sanitarios. Con una interfaz intuitiva, búsqueda avanzada, favoritos, geolocalización y notificaciones, VitaSalud facilita el acceso a la atención médica desde tu móvil.
@@ -41,7 +42,7 @@ Aplicación Android para encontrar, agendar y gestionar citas médicas con profe
 ## 🚀 Instalación local
 
 1. Clona este repositorio:
-   git clone https://github.com/tu_usuario/vitasalud.git
+   git clone https://github.com/AdrianDiaz14/VitaSalud_v3.0.git
 
 2. Abre con Android Studio.
 
